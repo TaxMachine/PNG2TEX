@@ -1,4 +1,4 @@
-# PNG2TEX
+# Description
 PNG2TEX is a script i made to create easily skyboxes for phantom forces
 # How to use
 Follow these steps and it should be easy to use
