@@ -10,3 +10,5 @@ Follow these steps and it should be easy to use
     <li>Enter the name of the file you want at the given position WITHOUT THE FILE EXTENSION AND THE .\ IN FRONT OF IT</li>
     <li>And after you should get a zip file the output folder with your skybox in it</li>
 </ul>
+<br />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fcAiqCmHeAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
