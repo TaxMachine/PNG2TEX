@@ -7,7 +7,9 @@ if(Test-Path -Path .\input) {
     Set-Location .\input
 } else {Write-Host "No Input folder found, creating one. Put the images in it before restarting the script " -Foregroundcolor Green | mkdir .\input | Set-Location .. | Stop-Process "powershell.exe"} # makes sure that the input folder exists if not it'll makes it
 # this looks like very stupids but it has to go through .dds format before so windows could understand wtf is happenning before renaming into .tex 
+Copy-Item ".\*.png" -Destination "..\backup\"
 Get-ChildItem *.png | Rename-Item -NewName { $_.Name -replace '.png', '.dds'}
+Copy-Item ".\*.dds" -Destination "..\backup\"
 Get-ChildItem *.dds | Rename-Item -NewName { $_.Name -replace '.dds', '.tex'}
 #ask file names to rename them correctly so it makes the compression easier
 Write-Host "Let the fields empty if you don't care about naming the files, but i highly recommend you to do so" -Foregroundcolor Yellow
